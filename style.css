@@ -1,32 +1,65 @@
-/* Essential custom styles after Bootstrap conversion */
-
-/* Logo styling */
-.logo {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #0d6efd;
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
-.logo span {
-  color: #6610f2;
+
+body {
+  color: #fff;
+  background: #1b1f24;
 }
 
 /* Header adjustments */
 header {
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1030;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  padding: 40px 16%;
+  background: transparent;
+  background-color: #1b1f24;
+  transition: all 0.5s ease;
 }
 
 /* Navbar custom spacing */
 .navbar-nav .nav-link {
   margin-right: 1rem;
-  color: #212529;
+  color: #c3cad5;
 }
 .navbar-nav .nav-link:hover {
-  color: #0d6efd;
+  color: #13bbff;
+  text-shadow: 3px 3px 20px #13bbff, -2px 1px 30px #fff;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 25px;
+}
+
+.h-btn {
+  display: inline-block;
+  padding: 11px 26px;
+  background: transparent;
+  color: #13bbff;
+  border: 2px solid #13bbff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600; /* semi-bold */
+  transition: all 0.5s ease;
+}
+
+.h-btn:hover {
+  background: #13bbff;
+  color: #1b1f24;
+  box-shadow: 0 0 20px #13bbff;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 110px 16% 90px;
 }
 
 /* Hero section tweaks */
@@ -35,20 +68,101 @@ header {
   text-align: center;
   background-color: #f8f9fa;
 }
-.hero h1 span {
+.hero h1 span,
+.navbar-brand span {
   color: #0d6efd;
 }
 
-/* Buttons */
-.btn-custom {
-  background-color: #0d6efd;
-  border: none;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0 5%;
+  background: url("img/grad-pic1.png") no-repeat right center;
+  background-position: 80% center; /* Move image slightly to the left (adjust 80% as needed) */
+  background-size: auto 100%; /* Adjust height while keeping width proportional */
+  background-color: #1b1f24;
+  position: relative;
 }
-.btn-custom:hover {
-  background-color: #0b5ed7;
+
+#home .main-content {
+  font-size: 1.6rem;
+  width: 50%;
+  z-index: 2;
+  color: white;
+  position: relative;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.main-content h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin: 20px 0 20px;
+  line-height: 1.2;
+}
+
+.main-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 620px;
+  max-width: 100%;
+  color: #c3cad5;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.social i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #13bbff;
+  border-radius: 50%;
+  backdrop-filter: brightness(88%);
+  font-size: 20px;
+  margin-right: 17px;
+  box-shadow: 0 0 20px transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.social i:hover {
+  transform: scare(1.1);
+  box-shadow: 0 0 20px #13bbff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  background: #13bbff;
+  color: #1b1f24;
+  border: 2px solid #13bbff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #13bbff;
+  box-shadow: 0 0 20px #13bbff;
+}
+
+.btn2 {
+  background: transparent;
+  color: #13bbff;
+  border: 2px solid #13bbff;
+  margin-left: 15px;
+  transition: all 0.5s ease;
+}
+
+.btn2:hover {
+  background: #13bbff;
+  color: #1b1f24;
 }
 
 /* About section image */
@@ -104,4 +218,19 @@ header {
 }
 .scroll-top:hover {
   background-color: #0b5ed7;
+}
+
+@media (max-width: 768px) {
+  #home {
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #home .main-content {
+    width: 100%;
+    text-align: left; /* Keeps left alignment on smaller screens */
+    padding-left: 1rem; /* Adjusts padding for small screens */
+  }
 }
