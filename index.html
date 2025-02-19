@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Developer <span>X.</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a href="#" class="btn btn-primary ms-3">Contact me</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero d-flex align-items-center min-vh-100 bg-light" id="home">
+      <div class="container text-center" data-aos="fade-in">
+        <h4>Hi there,</h4>
+        <h1>I'm <span>Yssah Barcial</span></h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto optio
+          sed cupiditate accusantium, repellendus sit animi rerum.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="btn btn-outline-primary">Hire me</a>
+          <a href="#" class="btn btn-primary">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about py-5 bg-white" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="zoom-in-down">
+            <img src="./img/about.jpg" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in-up">
+            <h2>I am Product <span>Designer</span> & Web Developer</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Experience: <strong>12 Years</strong></li>
+              <li class="list-group-item">
+                Specialty: <strong>Product Designer, Developer</strong>
+              </li>
+              <li class="list-group-item">Address: <strong>Quarry, Brgy. 9, Cabadbaran City</strong></li>
+              <li class="list-group-item">Email: <strong>yjbarcial@gmail.com</strong></li>
+              <li class="list-group-item">Phone: <strong>+63 956 382 9900</strong></li>
+              <li class="list-group-item">Freelance: <strong>available</strong></li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">View All Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services py-5 bg-light" id="services">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2>My <span>Services</span></h2>
+        </div>
+        <div class="row g-4" data-aos="zoom-in-up">
+          <div class="col-md-4">
+            <div class="card text-center border-0 shadow">
+              <img src="./img/s-1.svg" class="card-img-top p-4" />
+              <div class="card-body">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Download Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center border-0 shadow">
+              <img src="./img/s-2.svg" class="card-img-top p-4" />
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">
+                  Perspiciatis numquam facere et ipsum. Aliquam in ipsam officiis ducimus!
+                </p>
+                <a href="#" class="btn btn-outline-primary">Download Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center border-0 shadow">
+              <img src="./img/s-3.svg" class="card-img-top p-4" />
+              <div class="card-body">
+                <h5 class="card-title">Responsive Design</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Download Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-5 bg-white" id="contact">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2>Contact <span>me</span></h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8" data-aos="zoom-in">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email Address" required />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Write Message Here." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-light py-3 text-center">
+      <p>2025 Yssah Barcial, All Rights Reserved.</p>
+      <a href="#home" class="btn btn-outline-secondary">
+        <i class="ri-arrow-up-s-fill"></i>
+      </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 300, duration: 1400 });
+    </script>
+  </body>
+</html>
