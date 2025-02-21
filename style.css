@@ -58,8 +58,6 @@ header {
   transform: scale(1.1);
 }
 
-
-
 /* Hero section tweaks */
 .hero {
   padding: 100px 0;
@@ -178,17 +176,6 @@ header {
   padding: 0 5%;
   background-color: #22282f;
   position: relative;
-}
-
-/* Service box custom shadow */
-.service-box {
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
-.service-box:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Portfolio image hover effect */
