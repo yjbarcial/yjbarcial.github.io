@@ -58,9 +58,7 @@ header {
   transform: scale(1.1);
 }
 
-section {
-  padding: 110px 16% 90px;
-}
+
 
 /* Hero section tweaks */
 .hero {
@@ -170,6 +168,16 @@ section {
   border-radius: 1rem;
   width: 100%;
   height: auto;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0 5%;
+  background-color: #22282f;
+  position: relative;
 }
 
 /* Service box custom shadow */
