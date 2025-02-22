@@ -130,6 +130,10 @@ header {
   box-shadow: 0 0 20px #13bbff;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   display: inline-block;
   padding: 11px 26px;
