@@ -105,30 +105,28 @@
       </div>
     </section>
 
-    <section class="about py-5" id="about">
-      <div class="container pt-5 mt-5">
-        <div class="row align-items-center">
-          <!-- Image Section with Rounded Frame and Border -->
-          <div
-            class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center"
-            data-aos="zoom-in-down"
-          >
+    <!-- About Section -->
+    <div class="about py-5" id="about" data-aos="fade-up">
+      <div class="row">
+        <div class="col-6">
+          <!-- Image Section -->
+          <div class="mb-4 mb-md-0" data-aos="zoom-in-down">
             <div
               class="border border-primary border-3 rounded-circle p-2"
-              style="width: 400px; height: 400px; overflow: hidden"
+              style="width: 300px; height: 300px; overflow: hidden"
             >
               <img
                 src="./img/grad-pic2.jpg"
                 alt="About Image"
-                class="img-fluid rounded-circle w-400 h-400 object-fit-cover"
+                class="img-fluid rounded-circle w-100 h-100 object-fit-cover"
               />
             </div>
           </div>
 
-          <!-- Text Section -->
-          <div class="col-lg-6" data-aos="zoom-in-up">
-            <h2 class="fw-bold mb-4">
-              I am a Web <span class="text-primary">Developer</span>!<br />
+          <!-- Text/Information Section -->
+          <div class="" id="text" data-aos="zoom-in-up">
+            <h2 class="fw-bold mb-4 mt-4">
+              I am a Web <span class="text-primary">Developer</span>!
             </h2>
 
             <div class="exp-area fs-5">
@@ -160,11 +158,150 @@
               </p>
             </div>
 
-            <a href="#portfolio" class="btn btn-primary px-4 py-2 rounded-pill"
-              >View All Projects</a
-            >
+            <a href="#portfolio" class="btn btn-primary px-4 py-2 rounded-pill">
+              View All Projects
+            </a>
           </div>
         </div>
+
+        <div class="col-6">
+          <!-- First Row: Academic Highlights and Training & Seminars Attended -->
+          <div class="row g-4 mt-5">
+            <div class="col-md-6" data-aos="fade-up">
+              <h5 class="fw-semibold text-white mb-3">Academic Highlights</h5>
+              <ul class="fs-5 text-light ps-3">
+                <li class="mb-3">
+                  <strong class="text-white"
+                    >Vice President for Academic Affairs’ Lister</strong
+                  ><br />
+                  <small class="text-light-emphasis"
+                    >Academic Year 2022-2023</small
+                  >
+                </li>
+                <li>
+                  <strong class="text-white">Dean’s Lister</strong><br />
+                  <small class="text-light-emphasis"
+                    >Academic Year 2023-2024</small
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+              <h5 class="fw-semibold text-white mb-3">
+                Training & Seminars Attended
+              </h5>
+              <ul class="fs-5 text-light ps-3">
+                <li class="mb-4">
+                  <strong class="text-white"
+                    >Generation Connect Philippines</strong
+                  ><br />
+                  <span class="text-light-emphasis"
+                    >Office of the Under Secretary for ICT Industry Development
+                    (OUIID)</span
+                  ><br />
+                  <small class="text-light-emphasis">October 2024</small>
+                </li>
+                <li>
+                  <strong class="text-white">Digital Careers Expo (DCE)</strong
+                  ><br />
+                  <span class="text-light-emphasis"
+                    >Department of Information and Communications Technology
+                    (DICT)</span
+                  ><br />
+                  <small class="text-light-emphasis">November 2024</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Second Row: Educational Background and Club/Organization Affiliations -->
+          <div class="row g-4 mt-5">
+            <div class="col-md-6" data-aos="fade-up">
+              <h5 class="fw-semibold text-white mb-3">
+                Educational Background
+              </h5>
+              <ul class="fs-5 text-light ps-3">
+                <li>
+                  <strong class="text-white"
+                    >Bachelor of Science in Information System</strong
+                  ><br />
+                  <span class="text-light-emphasis"
+                    >Caraga State University-Main Campus</span
+                  ><br />
+                  <small class="text-light-emphasis"
+                    >2022 – 2026 | KM 7 NH1, Butuan City, 8600</small
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+              <h5 class="fw-semibold text-white mb-3">
+                Club/Organization Affiliations
+              </h5>
+              <ul class="fs-5 text-light ps-3">
+                <li>
+                  <strong class="text-white">Member</strong><br />
+                  <span class="text-light-emphasis"
+                    >Information Systems Society</span
+                  ><br />
+                  <small class="text-light-emphasis">2022 – Present</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <section class="certifications py-5" id="certifications" data-aos="fade-up">
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">Certifications</h3>
+      </div>
+      <div
+        class="certificate-carousel position-relative d-flex justify-content-center align-items-center"
+      >
+        <button class="btn btn-outline-primary me-2" id="prevCert">
+          &#8249;
+        </button>
+        <div class="certificate-view overflow-hidden position-relative">
+          <div
+            class="d-flex transition"
+            id="certificateContainer"
+            style="transition: transform 0.5s ease"
+          >
+            <img
+              src="./img/cert-introHTML.jpg"
+              alt="Certificate 1"
+              class="img-fluid rounded shadow certificate-img"
+            />
+            <img
+              src="./img/cert-introCSS.jpg"
+              alt="Certificate 2"
+              class="img-fluid rounded shadow certificate-img"
+            />
+            <img
+              src="./img/cert-introJS.jpg"
+              alt="Certificate 3"
+              class="img-fluid rounded shadow certificate-img"
+            />
+            <img
+              src="./img/cert-GENCONPH.png"
+              alt="Certificate 4"
+              class="img-fluid rounded shadow certificate-img"
+            />
+            <img
+              src="./img/cert-DCE.jpg"
+              alt="Certificate 5"
+              class="img-fluid rounded shadow certificate-img"
+            />
+          </div>
+        </div>
+        <button class="btn btn-outline-primary ms-2" id="nextCert">
+          &#8250;
+        </button>
       </div>
     </section>
 
@@ -364,8 +501,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
       AOS.init({ offset: 300, duration: 1400 });
+
+      /* JavaScript for Button Scroll Functionality */
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.getElementById("certificateContainer");
+        const certWidth = 500; // width of one certificate image
+        let index = 0;
+
+        document
+          .getElementById("prevCert")
+          .addEventListener("click", function () {
+            if (index > 0) index--;
+            updateScroll();
+          });
+
+        document
+          .getElementById("nextCert")
+          .addEventListener("click", function () {
+            if (index < container.children.length - 1) index++;
+            updateScroll();
+          });
+
+        function updateScroll() {
+          container.style.transform = `translateX(-${index * certWidth}px)`;
+        }
+      });
     </script>
   </body>
 </html>
