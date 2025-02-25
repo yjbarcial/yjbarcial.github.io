@@ -22,13 +22,15 @@
   </head>
 
   <body>
-    <header class="navbar navbar-expand-lg fixed-top d-flex align-items-center">
+    <header
+      class="navbar navbar-expand-lg fixed-top d-flex align-items-center py-3"
+    >
       <div class="container">
-        <p class="navbar-brand fw-bold">
-          IT 110 - <span>Personal Website</span>
-        </p>
+        <!-- <p class="navbar-brand text-white fw-bold">Personal 
+        <span>Website</span>
+        </p> -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -42,7 +44,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#certificates">Certificates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -58,12 +60,15 @@
 
     <section class="hero d-flex align-items-center min-vh-100 ms-4" id="home">
       <div class="main-content ms-5" data-aos="fade-in">
-        <h4 class="fw-bold pb-2">Hi there,</h4>
+        <h4 class="fw-bold pb-2">Welcome,</h4>
         <h1 class="fw-bold">I'm <span>Yssah Barcial</span></h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto optio
-          sed cupiditate accusantium, repellendus sit animi rerum.
-        </p>
+
+        <!-- Typed Text -->
+        <div class="typed-text mb-5">
+          <h4 class="typed-text-output d-inline-block text-light"></h4>
+        </div>
+        <!-- End of Typed Text -->
+
         <div class="social mb-5">
           <a
             href="https://www.facebook.com/yssxh/"
@@ -109,10 +114,12 @@
     <div class="about d-flex" id="about" data-aos="fade-up">
       <div class="container text-white pt-5">
         <!-- Section Heading -->
-        <div class="text-center mb-5" data-aos="fade-in">
+        <div class="text-center mx-5 my-5" data-aos="fade-in">
           <h2 class="fw-bold"><span class="text-primary">About</span> Me</h2>
         </div>
-        <div class="row align-items-center g-5">
+        <!-- End of Section Heading -->
+
+        <div class="row d-flex align-items-center g-5">
           <!-- Image Section -->
           <div
             class="col-lg-4 text-center position-relative"
@@ -129,6 +136,7 @@
               />
             </div>
           </div>
+          <!-- End of Image Section -->
 
           <!-- Bio Section -->
           <div class="col-lg-8 ps-5" data-aos="zoom-in-up">
@@ -182,7 +190,7 @@
             <h3
               class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
             >
-              Education
+              Educational Background
             </h3>
             <p class="fs-6 text-light">
               <strong>Bachelor of Science in Information System</strong><br />
@@ -209,7 +217,7 @@
             <h3
               class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
             >
-              Club/Organization Affiliations
+              Organization Affiliations
             </h3>
             <p class="fs-6 text-light">
               <strong>Information Systems Society</strong><br />
@@ -244,58 +252,106 @@
       </div>
     </div>
 
-    <!-- Certifications Section -->
-    <section class="certifications py-5" id="certifications" data-aos="fade-up">
-      <!-- Section Heading -->
-      <div class="text-center mb-5" data-aos="fade-down">
-        <h2 class="fw-bold">
-          <span class="">Certifications</span>
-        </h2>
-      </div>
-      <div
-        class="certificate-carousel position-relative d-flex justify-content-center align-items-center"
-      >
-        <button class="btn btn-outline-primary me-2" id="prevCert">
-          &#8249;
-        </button>
-        <div class="certificate-view overflow-hidden position-relative">
+    <!-- Certificates Section -->
+    <div class="certificates py-5" id="certificates" data-aos="fade-up">
+      <div class="container text-white">
+        <!-- Section Heading -->
+        <div class="text-center mx-5 my-5" data-aos="fade-in">
+          <h2 class="fw-bold">
+            My <span class="text-primary">Certificates</span>
+          </h2>
+        </div>
+        <!-- End of Section Heading -->
+        <div class="row g-4 justify-content-center">
           <div
-            class="d-flex transition"
-            id="certificateContainer"
-            style="transition: transform 0.5s ease"
+            class="col-md-6 col-lg-4 pb-2"
+            v-for="certificate in certificates"
           >
             <img
               src="./img/cert-introHTML.jpg"
               alt="Certificate 1"
-              class="img-fluid rounded shadow certificate-img"
+              class="img-fluid rounded-3 shadow border border-primary certificate-img"
             />
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
             <img
               src="./img/cert-introCSS.jpg"
               alt="Certificate 2"
-              class="img-fluid rounded shadow certificate-img"
+              class="img-fluid rounded-3 shadow border border-primary certificate-img"
             />
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
             <img
               src="./img/cert-introJS.jpg"
               alt="Certificate 3"
-              class="img-fluid rounded shadow certificate-img"
+              class="img-fluid rounded-3 shadow border border-primary certificate-img"
             />
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
             <img
               src="./img/cert-GENCONPH.png"
               alt="Certificate 4"
-              class="img-fluid rounded shadow certificate-img"
+              class="img-fluid rounded-3 shadow border border-primary certificate-img"
             />
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
             <img
               src="./img/cert-DCE.jpg"
               alt="Certificate 5"
-              class="img-fluid rounded shadow certificate-img"
+              class="img-fluid rounded-3 shadow border border-primary certificate-img"
             />
           </div>
         </div>
-        <button class="btn btn-outline-primary ms-2" id="nextCert">
-          &#8250;
-        </button>
       </div>
-    </section>
+    </div>
+
+    <!-- Modal for Fullscreen View -->
+    <div
+      class="modal fade"
+      id="certificateModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img
+              src=""
+              alt="Certificate Full View"
+              id="modalCertificateImg"
+              class="img-fluid rounded-3 w-100"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn-close position-absolute top-0 end-0 m-3 bg-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .certificate-img {
+        width: 100%;
+        object-fit: contain;
+        border: 3px solid #007bff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .certificate-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .certificate-img {
+          max-width: 100%;
+        }
+      }
+    </style>
 
     <section class="portfolio py-5" id="portfolio">
       <div class="container">
@@ -491,36 +547,37 @@
       </a>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       AOS.init({ offset: 300, duration: 1400 });
 
-      /* JavaScript for Button Scroll Functionality */
-
+      /* Typed Text */
       document.addEventListener("DOMContentLoaded", function () {
-        const container = document.getElementById("certificateContainer");
-        const certWidth = 500; // width of one certificate image
-        let index = 0;
+        var typed = new Typed(".typed-text-output", {
+          strings: ["Web Designer", "Web Developer", "Front End Developer"],
+          typeSpeed: 60,
+          backSpeed: 30,
+          loop: true,
+        });
+      });
 
-        document
-          .getElementById("prevCert")
-          .addEventListener("click", function () {
-            if (index > 0) index--;
-            updateScroll();
+      /* Certificates */
+      document.addEventListener("DOMContentLoaded", function () {
+        const certificates = document.querySelectorAll(".certificate-img");
+        const modalImg = document.getElementById("modalCertificateImg");
+        const modal = new bootstrap.Modal(
+          document.getElementById("certificateModal")
+        );
+
+        certificates.forEach((img) => {
+          img.addEventListener("click", () => {
+            modalImg.src = img.src;
+            modal.show();
           });
-
-        document
-          .getElementById("nextCert")
-          .addEventListener("click", function () {
-            if (index < container.children.length - 1) index++;
-            updateScroll();
-          });
-
-        function updateScroll() {
-          container.style.transform = `translateX(-${index * certWidth}px)`;
-        }
+        });
       });
     </script>
   </body>
