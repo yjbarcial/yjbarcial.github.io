@@ -7,7 +7,7 @@
 
 body {
   color: #fff;
-  background: #1b1f24;
+  background-color: #1b263b;
 }
 
 /* Header adjustments */
@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   padding: 40px 16%;
   background: transparent;
-  background-color: #1b1f24;
+  background-color: #1b263b;
   transition: all 0.5s ease;
 }
 
@@ -78,7 +78,6 @@ header {
   background: url("img/grad-pic1.png") no-repeat right center;
   background-position: 80% center; /* Move image slightly to the left (adjust 80% as needed) */
   background-size: auto 100%; /* Adjust height while keeping width proportional */
-  background-color: #1b1f24;
   position: relative;
 }
 
@@ -177,8 +176,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 0 5%;
-  background-color: #22282f;
+  background-color: #1b263b;
   position: relative;
 }
 
