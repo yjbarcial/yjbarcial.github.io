@@ -104,7 +104,7 @@
         </div>
 
         <div class="main-btn">
-          <a href="#" class="btn">Hire me</a>
+          <a href="#contact" class="btn">Hire me</a>
           <a href="resume.pdf" class="btn btn2" download> Download CV </a>
         </div>
       </div>
@@ -332,167 +332,66 @@
       </div>
     </div>
 
-    <style>
-      .certificate-img {
-        width: 100%;
-        object-fit: contain;
-        border: 3px solid #007bff;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
-      }
-
-      .certificate-img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      }
-
-      @media (max-width: 768px) {
-        .certificate-img {
-          max-width: 100%;
-        }
-      }
-    </style>
-
     <section class="portfolio py-5" id="portfolio">
       <div class="container">
         <!-- Section Heading -->
-        <div class="text-center mb-5" data-aos="fade-down">
+        <div class="text-center my-5 pb-5" data-aos="fade-down">
           <h2 class="fw-bold">
             My <span class="text-primary">Portfolio</span>
           </h2>
         </div>
 
-        <!-- Portfolio Grid -->
-        <div class="row g-4" data-aos="zoom-in-up">
-          <!-- Portfolio Item 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm">
+        <!-- Portfolio Projects -->
+        <div class="row g-5" data-aos="zoom-in-up">
+          <!-- OrgMeUp! -->
+          <div class="col-lg-6">
+            <div class="portfolio-item p-4 shadow-sm rounded-4 text-center">
               <img
-                src="./img/port-1.jpg"
-                class="card-img-top img-fluid"
-                alt="Portfolio 1"
+                src="./img/logo-orgmeup.png"
+                class="portfolio-img-fluid rounded-4 mb-3"
+                alt="OrgMeUp! Logo"
               />
-              <div class="card-body">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h5 class="card-title mb-0">Website Design</h5>
-                  <a href="#"><i class="ri-github-fill fs-4 text-dark"></i></a>
-                </div>
-                <h6 class="card-subtitle text-muted">
-                  Website Development For Dark X
-                </h6>
-              </div>
+              <h4 class="fw-bold portfolio-h5 my-3">
+                OrgMeUp! - Student Registration App
+              </h4>
+              <p class="text-light">
+                A mobile app designed to streamline student registration for
+                university organizations. Features include real-time updates,
+                user-friendly interfaces, and a secure database.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1dSoWaaaG8IGYM3YrBqNVVXQvayLrpNSl/view"
+                target="_blank"
+                class="btn portfolio-btn-primary rounded-pill px-4"
+              >
+                <i class="ri-drive-fill fs-5"></i> View on Google Drive
+              </a>
             </div>
           </div>
 
-          <!-- Portfolio Item 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm">
+          <!-- GoldQuill -->
+          <div class="col-lg-6">
+            <div class="portfolio-item p-4 shadow-sm rounded-4 text-center">
               <img
-                src="./img/port-2.jpg"
-                class="card-img-top img-fluid"
-                alt="Portfolio 2"
+                src="./img/logo-goldquill.png"
+                class="portfolio-img-fluid rounded-4 my-3"
+                alt="GoldQuill Logo"
               />
-              <div class="card-body">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h5 class="card-title mb-0">Website Design</h5>
-                  <a href="#"><i class="ri-github-fill fs-4 text-dark"></i></a>
-                </div>
-                <h6 class="card-subtitle text-muted">
-                  Website Development For Dark X
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm">
-              <img
-                src="./img/port-3.jpg"
-                class="card-img-top img-fluid"
-                alt="Portfolio 3"
-              />
-              <div class="card-body">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h5 class="card-title mb-0">Website Design</h5>
-                  <a href="#"><i class="ri-github-fill fs-4 text-dark"></i></a>
-                </div>
-                <h6 class="card-subtitle text-muted">
-                  Website Development For Dark X
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 4 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm">
-              <img
-                src="./img/port-4.jpg"
-                class="card-img-top img-fluid"
-                alt="Portfolio 4"
-              />
-              <div class="card-body">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h5 class="card-title mb-0">Website Design</h5>
-                  <a href="#"><i class="ri-github-fill fs-4 text-dark"></i></a>
-                </div>
-                <h6 class="card-subtitle text-muted">
-                  Website Development For Dark X
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 5 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm">
-              <img
-                src="./img/port-5.jpg"
-                class="card-img-top img-fluid"
-                alt="Portfolio 5"
-              />
-              <div class="card-body">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h5 class="card-title mb-0">Website Design</h5>
-                  <a href="#"><i class="ri-github-fill fs-4 text-dark"></i></a>
-                </div>
-                <h6 class="card-subtitle text-muted">
-                  Website Development For Dark X
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 6 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm">
-              <img
-                src="./img/port-6.jpg"
-                class="card-img-top img-fluid"
-                alt="Portfolio 6"
-              />
-              <div class="card-body">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-2"
-                >
-                  <h5 class="card-title mb-0">Website Design</h5>
-                  <a href="#"><i class="ri-github-fill fs-4 text-dark"></i></a>
-                </div>
-                <h6 class="card-subtitle text-muted">
-                  Website Development For Dark X
-                </h6>
-              </div>
+              <h4 class="fw-bold portfolio-h5 mb-3">
+                GoldQuill - Content Submission Portal
+              </h4>
+              <p class="text-light">
+                A web-based platform developed for The Gold Panicles, allowing
+                seamless article, photo, and video submissions with automatic
+                categorization and user-friendly management features.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/17CTHA8g9vZsbOfnAp_pF73lXtEOmsWt8/view"
+                target="_blank"
+                class="btn portfolio-btn-primary rounded-pill px-4"
+              >
+                <i class="ri-drive-fill fs-5"></i> View on Google Drive
+              </a>
             </div>
           </div>
         </div>

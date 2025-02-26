@@ -188,16 +188,45 @@ a {
 }
 
 /* CSS for Scrollable Certifications Section with Buttons */
+.certificate-img {
+  width: 100%;
+  object-fit: contain;
+  border: 3px solid #007bff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
+.certificate-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
 
+@media (max-width: 768px) {
+  .certificate-img {
+    max-width: 100%;
+  }
+}
 
 /* Portfolio image hover effect */
-.portfolio-item img {
-  border-radius: 0.5rem;
-  transition: transform 0.3s ease-in-out;
+
+.portfolio-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #007bff;
 }
-.portfolio-item img:hover {
-  transform: scale(1.05);
+
+.portfolio-img-fluid {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.portfolio-h5 {
+  color: #0d6efd;
+}
+.portfolio-btn-primary {
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
 }
 
 /* Contact form */
