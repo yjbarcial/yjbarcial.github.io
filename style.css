@@ -41,25 +41,6 @@ header {
   text-shadow: 3px 3px 20px #13bbff, -2px 1px 30px #fff;
 }
 
-.h-btn {
-  display: inline-block;
-  padding: 11px 26px;
-  background: transparent;
-  color: #13bbff;
-  border: 2px solid #13bbff;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600; /* semi-bold */
-  transition: all 0.5s ease;
-}
-
-.h-btn:hover {
-  background: #13bbff;
-  color: #1b1f24;
-  box-shadow: 0 0 20px #13bbff;
-  transform: scale(1.1);
-}
-
 /* Hero section tweaks */
 .hero {
   padding: 100px 0;
@@ -235,6 +216,10 @@ a {
   border-radius: 0.5rem;
   border: 1px solid #dee2e6;
   padding: 0.75rem;
+}
+
+.contact-border {
+  border: 2px solid #007bff;
 }
 
 /* Footer */
