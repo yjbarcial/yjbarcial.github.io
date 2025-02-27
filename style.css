@@ -1,32 +1,52 @@
-/* Essential custom styles after Bootstrap conversion */
-
-/* Logo styling */
-.logo {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #0d6efd;
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
-.logo span {
-  color: #6610f2;
+
+body {
+  color: #fff;
+  background-color: #1b263b;
 }
 
 /* Header adjustments */
 header {
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1030;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  justify-content: space-between;
+  padding: 40px 16%;
+  background: transparent;
+  background-color: #1b263b;
+  transition: all 0.5s ease;
+  margin: auto;
 }
 
-/* Navbar custom spacing */
+/* Navbar */
+.navbar-toggler {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  white-space: nowrap; /* Prevents text from breaking */
+}
 .navbar-nav .nav-link {
   margin-right: 1rem;
-  color: #212529;
+  color: #c3cad5;
+  font-size: large;
 }
 .navbar-nav .nav-link:hover {
-  color: #0d6efd;
+  color: #13bbff;
+  text-shadow: 3px 3px 20px #13bbff, -2px 1px 30px #fff;
 }
 
 /* Hero section tweaks */
@@ -35,20 +55,113 @@ header {
   text-align: center;
   background-color: #f8f9fa;
 }
-.hero h1 span {
+.hero h1 span,
+.navbar-brand span {
   color: #0d6efd;
 }
 
-/* Buttons */
-.btn-custom {
-  background-color: #0d6efd;
-  border: none;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
+.typed-text {
+  color: #0d6efd;
+  height: 22px;
 }
-.btn-custom:hover {
-  background-color: #0b5ed7;
+
+#home {
+  display: column;
+  text-align: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0 5%;
+  background: url("img/grad-pic1.png") no-repeat right center;
+  background-position: 80% center; /* Move image slightly to the left (adjust 80% as needed) */
+  background-size: auto 100%; /* Adjust height while keeping width proportional */
+  position: relative;
+}
+
+#home .main-content {
+  font-size: 1.6rem;
+  width: 50%;
+  z-index: 2;
+  color: white;
+  position: relative;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.main-content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 20px 0 20px;
+  line-height: 1.2;
+}
+
+.main-content h4 {
+  font-size: 1.8rem;
+}
+
+.main-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 620px;
+  max-width: 100%;
+  color: #c3cad5;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.social i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #13bbff;
+  border-radius: 50%;
+  backdrop-filter: brightness(88%);
+  font-size: 20px;
+  margin-right: 17px;
+  box-shadow: 0 0 20px transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.social i:hover {
+  transform: scare(1.1);
+  box-shadow: 0 0 20px #13bbff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  background: #13bbff;
+  color: #1b1f24;
+  border: 2px solid #13bbff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #13bbff;
+  box-shadow: 0 0 20px #13bbff;
+}
+
+.btn2 {
+  background: transparent;
+  color: #13bbff;
+  border: 2px solid #13bbff;
+  margin-left: 15px;
+  transition: all 0.5s ease;
+}
+
+.btn2:hover {
+  background: #13bbff;
+  color: #1b1f24;
 }
 
 /* About section image */
@@ -57,25 +170,52 @@ header {
   width: 100%;
   height: auto;
 }
-
-/* Service box custom shadow */
-.service-box {
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: center;
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #1b263b;
+  position: relative;
 }
-.service-box:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+/* CSS for Scrollable Certifications Section with Buttons */
+.certificate-img {
+  width: 100%;
+  object-fit: contain;
+  border: 2.5px solid #007bff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.certificate-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.certificate-title {
+  text-align: center;
+  padding-top: 10px;
 }
 
 /* Portfolio image hover effect */
-.portfolio-item img {
-  border-radius: 0.5rem;
-  transition: transform 0.3s ease-in-out;
+.portfolio {
+  position: relative;
 }
-.portfolio-item img:hover {
-  transform: scale(1.05);
+.portfolio-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #007bff;
+}
+.portfolio-img-fluid {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.portfolio-h5 {
+  color: #0d6efd;
+}
+.portfolio-btn-primary {
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
 }
 
 /* Contact form */
@@ -85,23 +225,167 @@ header {
   border: 1px solid #dee2e6;
   padding: 0.75rem;
 }
+.contact-border {
+  border: 2px solid #007bff;
+}
+
+/* Floating Arrow */
+.floating-arrow {
+  position: absolute;
+  right: 100px; /* Adjust as needed */
+  bottom: 100px; /* Adjust to align properly */
+  display: flex;
+  flex-direction: column; /* Stack arrows */
+  align-items: center;
+  animation: floatArrows 1.5s infinite alternate ease-in-out;
+}
+.floating-arrow a {
+  text-decoration: none;
+  color: #13bbff;
+  font-size: 40px; /* Make arrows bigger */
+  display: flex;
+  flex-direction: column; /* Ensures the icons stack */
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.floating-arrow a:hover {
+  transform: scale(1.2);
+}
+.floating-arrow i {
+  display: block; /* Forces icons to stack */
+  line-height: 0.5; /* Removes extra spacing */
+}
+
+/* Floating Animation */
+@keyframes floatArrows {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
 /* Footer */
 .footer {
   padding: 1.5rem 0;
-  background-color: #343a40;
+  background-color: #1b1f24;
   color: #fff;
   text-align: center;
 }
-.scroll-top {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  background-color: #0d6efd;
-  color: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 50%;
+
+/* @media */
+@media (max-width: 480px) {
+  #home {
+    margin-top: 100px;
+  }
+
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 40px 5%;
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: medium;
+  }
+
+  .floating-arrow {
+    right: 15px;
+    bottom: 60px;
+  }
 }
-.scroll-top:hover {
-  background-color: #0b5ed7;
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  #home {
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #home .main-content {
+    width: 100%;
+    text-align: left; /* Keeps left alignment on smaller screens */
+    padding-left: 1rem; /* Adjusts padding for small screens */
+  }
+
+  .main-content h1 {
+    font-size: 3rem;
+  }
+
+  .main-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .certificate-img {
+    max-width: 100%;
+  }
+
+  .portfolio .row {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  .floating-arrow {
+    display: none; /* Hide floating arrows on mobile */
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 5%;
+  }
 }

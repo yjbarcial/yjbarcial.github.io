@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Yssah Barcial</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -20,12 +20,18 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
   <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <header
+      class="navbar navbar-expand-lg fixed-top d-flex align-items-center py-3"
+    >
       <div class="container">
-        <a href="#" class="navbar-brand">Developer <span>X.</span></a>
+        <p class="navbar-brand text-white fw-bold">
+          Personal
+          <span>Website</span>
+        </p>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -35,136 +41,413 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
           </ul>
-          <a href="#" class="btn btn-primary ms-3">Contact me</a>
         </div>
       </div>
     </header>
 
-    <section class="hero d-flex align-items-center min-vh-100 bg-light" id="home">
-      <div class="container text-center" data-aos="fade-in">
-        <h4>Hi there,</h4>
-        <h1>I'm <span>Yssah Barcial</span></h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto optio
-          sed cupiditate accusantium, repellendus sit animi rerum.
-        </p>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="#" class="btn btn-outline-primary">Hire me</a>
-          <a href="#" class="btn btn-primary">Download CV</a>
+    <section class="hero d-flex align-items-center min-vh-100 ms-4" id="home">
+      <div class="main-content ms-5" data-aos="fade-in">
+        <h4 class="fw-bold pb-2">Welcome!</h4>
+        <h1 class="fw-bold">I'm <span>Yssah Barcial</span></h1>
+
+        <!-- Typed Text -->
+        <div class="typed-text mb-5">
+          <h4 class="typed-text-output d-inline-block text-light"></h4>
+        </div>
+        <!-- End of Typed Text -->
+
+        <div class="social mb-5">
+          <a
+            href="https://www.facebook.com/yssxh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-facebook-fill"></i>
+          </a>
+
+          <a
+            href="https://github.com/yjbarcial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-github-fill"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/yssah-barcial-38739b349/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-linkedin-fill"></i>
+          </a>
+        </div>
+
+        <div class="main-btn">
+          <a href="resume.pdf" class="btn ms-0" download> Download CV </a>
         </div>
       </div>
     </section>
 
-    <section class="about py-5 bg-white" id="about">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="zoom-in-down">
-            <img src="./img/about.jpg" class="img-fluid rounded" />
-          </div>
-          <div class="col-lg-6" data-aos="zoom-in-up">
-            <h2>I am Product <span>Designer</span> & Web Developer</h2>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Experience: <strong>12 Years</strong></li>
-              <li class="list-group-item">
-                Specialty: <strong>Product Designer, Developer</strong>
-              </li>
-              <li class="list-group-item">Address: <strong>Quarry, Brgy. 9, Cabadbaran City</strong></li>
-              <li class="list-group-item">Email: <strong>yjbarcial@gmail.com</strong></li>
-              <li class="list-group-item">Phone: <strong>+63 956 382 9900</strong></li>
-              <li class="list-group-item">Freelance: <strong>available</strong></li>
-            </ul>
-            <a href="#" class="btn btn-primary mt-3">View All Projects</a>
-          </div>
+    <!-- About Section -->
+    <div class="about d-flex" id="about" data-aos="fade-up">
+      <div class="container text-white pt-5">
+        <!-- Section Heading -->
+        <div class="text-center mx-5 my-5" data-aos="fade-in">
+          <h2 class="fw-bold"><span class="text-primary">About</span> Me</h2>
         </div>
-      </div>
-    </section>
+        <!-- End of Section Heading -->
 
-    <section class="services py-5 bg-light" id="services">
-      <div class="container">
-        <div class="text-center mb-5" data-aos="fade-down">
-          <h2>My <span>Services</span></h2>
-        </div>
-        <div class="row g-4" data-aos="zoom-in-up">
-          <div class="col-md-4">
-            <div class="card text-center border-0 shadow">
-              <img src="./img/s-1.svg" class="card-img-top p-4" />
-              <div class="card-body">
-                <h5 class="card-title">UI/UX Design</h5>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="#" class="btn btn-outline-primary">Download Now</a>
-              </div>
+        <div class="row d-flex align-items-center g-5">
+          <!-- Image Section -->
+          <div
+            class="col-lg-4 text-center position-relative"
+            data-aos="zoom-in-down"
+          >
+            <div
+              class="border border-primary border-3 rounded-circle p-2 shadow-lg"
+              style="width: 400px; height: 400px; overflow: hidden"
+            >
+              <img
+                src="./img/grad-pic2.jpg"
+                alt="Profile Picture"
+                class="img-fluid rounded-circle w-100 h-100 object-fit-cover"
+              />
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card text-center border-0 shadow">
-              <img src="./img/s-2.svg" class="card-img-top p-4" />
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">
-                  Perspiciatis numquam facere et ipsum. Aliquam in ipsam officiis ducimus!
-                </p>
-                <a href="#" class="btn btn-outline-primary">Download Now</a>
+          <!-- End of Image Section -->
+
+          <!-- Bio Section -->
+          <div class="col-lg-8 ps-5" data-aos="zoom-in-up">
+            <h2 class="fw-semibold mb-3 text-white fs-3">
+              Hi, I'm <span class="text-primary">Yssah</span> — I build clean,
+              responsive, and user-friendly web applications.
+            </h2>
+            <p class="fs-6 text-light fst-italic mb-4">
+              Coding with purpose, designing with passion.
+            </p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <ul class="list-unstyled fs-6 text-light">
+                  <li>
+                    <i class="bi bi-code-slash text-primary"></i>
+                    <strong>Experience:</strong> 2 Years
+                  </li>
+                  <li>
+                    <i class="bi bi-pencil-square text-primary"></i>
+                    <strong>Specialty:</strong> Web Design & Development
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled fs-6 text-light">
+                  <li>
+                    <i class="bi bi-address text-primary"></i>
+                    <strong>Address:</strong> Quarry, Brgy. Poblacion 9,
+                    Cabadbaran City
+                  </li>
+                  <li>
+                    <i class="bi bi-phone text-primary"></i>
+                    <strong>Phone:</strong> 0956 – 382 – 9900
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope text-primary"></i>
+                    <strong>Email:</strong> yjbarcial@gmail.com
+                  </li>
+                </ul>
               </div>
             </div>
+            <a href="#portfolio" class="btn btn2 ms-0 mt-3"
+              >Check Out My Work</a
+            >
           </div>
-          <div class="col-md-4">
-            <div class="card text-center border-0 shadow">
-              <img src="./img/s-3.svg" class="card-img-top p-4" />
-              <div class="card-body">
-                <h5 class="card-title">Responsive Design</h5>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="#" class="btn btn-outline-primary">Download Now</a>
-              </div>
-            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="row g-5 mt-5">
+          <div class="col-lg-3" data-aos="fade-up">
+            <h3
+              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+            >
+              Educational Background
+            </h3>
+            <p class="fs-6 text-light">
+              <strong>Bachelor of Science in Information System</strong><br />
+              <em>Caraga State University-Main Campus</em><br />
+              <small>2022 – 2026</small>
+            </p>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up">
+            <h3
+              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+            >
+              Academic Achievements
+            </h3>
+            <p class="fs-6 text-light">
+              <strong>VP for Academic Affairs’ Lister</strong><br />
+              <em>AY 2022-2023</em>
+            </p>
+            <p class="fs-6 text-light">
+              <strong>Dean’s Lister</strong><br />
+              <em>AY 2023-2024</em>
+            </p>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up">
+            <h3
+              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+            >
+              Organization Affiliations
+            </h3>
+            <p class="fs-6 text-light">
+              <strong>Information Systems Society</strong><br />
+              <em>Member</em><br />
+              <small>2022 – Present</small>
+            </p>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up">
+            <h3
+              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+            >
+              Training & Seminars Attended
+            </h3>
+            <p class="fs-6 text-light">
+              <strong>Generation Connect Philippines</strong><br />
+              <em
+                >Office of the Under Secretary for ICT Industry Development
+                (OUIID)</em
+              ><br />
+              <small>October 2024</small>
+            </p>
+            <p class="fs-6 text-light">
+              <strong>Digital Careers Expo (DCE)</strong><br />
+              <em
+                >Department of Information and Communications Technology
+                (DICT)</em
+              ><br />
+              <small>November 2024</small>
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="contact py-5 bg-white" id="contact">
+    <!-- Certificates Section -->
+    <div class="certificates py-5" id="certificates" data-aos="fade-up">
+      <div class="container text-white">
+        <!-- Section Heading -->
+        <div class="text-center mx-5 my-5" data-aos="fade-in">
+          <h2 class="fw-bold">
+            My <span class="text-primary">Certificates</span>
+          </h2>
+        </div>
+        <!-- End of Section Heading -->
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-md-6 col-lg-4 pb-2"
+            v-for="certificate in certificates"
+          >
+            <img
+              src="./img/cert-introHTML.jpg"
+              alt="Certificate 1"
+              class="img-fluid rounded-3 shadow certificate-img certificate-img"
+            />
+            <p class="certificate-title">
+              SoloLearn<br /><em>Introduction to HTML Course</em>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
+            <img
+              src="./img/cert-introCSS.jpg"
+              alt="Certificate 2"
+              class="img-fluid rounded-3 shadow certificate-img certificate-img"
+            />
+            <p class="certificate-title">
+              SoloLearn<br /><em>Introduction to CSS Course</em>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
+            <img
+              src="./img/cert-introJS.jpg"
+              alt="Certificate 3"
+              class="img-fluid rounded-3 shadow certificate-img certificate-img"
+            />
+            <p class="certificate-title">
+              SoloLearn<br /><em>Introduction to JavaScript Course</em>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
+            <img
+              src="./img/cert-GENCONPH.png"
+              alt="Certificate 4"
+              class="img-fluid rounded-3 shadow certificate-img certificate-img"
+            />
+            <p class="certificate-title">
+              Certificate of Appearance<br /><em
+                >Generation Connect Philippines</em
+              >
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 pb-2">
+            <img
+              src="./img/cert-DCE.jpg"
+              alt="Certificate 5"
+              class="img-fluid rounded-3 shadow certificate-img certificate-img"
+            />
+            <p class="certificate-title mt-1">
+              Certification of Attendance<br /><em
+                >Digital Careers Expo (DCE)</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Fullscreen View -->
+    <div
+      class="modal fade"
+      id="certificateModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img
+              src=""
+              alt="Certificate Full View"
+              id="modalCertificateImg"
+              class="img-fluid rounded-3 w-100"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn-close position-absolute top-0 end-0 m-3 bg-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="portfolio py-3" id="portfolio">
       <div class="container">
-        <div class="text-center mb-5" data-aos="fade-down">
-          <h2>Contact <span>me</span></h2>
+        <!-- Section Heading -->
+        <div class="text-center my-5" data-aos="fade-down">
+          <h2 class="fw-bold">
+            My <span class="text-primary">Portfolio</span>
+          </h2>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8" data-aos="zoom-in">
-            <form>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" required />
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email Address" required />
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" rows="5" placeholder="Write Message Here." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Send Message</button>
-            </form>
+
+        <!-- Portfolio Projects -->
+        <div class="row g-5 mb-5 pb-5" data-aos="zoom-in-up">
+          <!-- OrgMeUp! -->
+          <div class="col-lg-6">
+            <div class="portfolio-item p-4 shadow-sm rounded-4 text-center">
+              <img
+                src="./img/logo-orgmeup.png"
+                class="portfolio-img-fluid rounded-4 mb-3"
+                alt="OrgMeUp! Logo"
+              />
+              <h4 class="fw-bold portfolio-h5 my-3">
+                OrgMeUp! - Student Registration App
+              </h4>
+              <p class="text-light">
+                A mobile app designed to streamline student registration for
+                university organizations. Features include real-time updates,
+                user-friendly interfaces, and a secure database.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1dSoWaaaG8IGYM3YrBqNVVXQvayLrpNSl/view"
+                target="_blank"
+                class="btn portfolio-btn-primary rounded-pill px-4"
+              >
+                <i class="ri-drive-fill fs-5"></i> View on Google Drive
+              </a>
+            </div>
           </div>
+
+          <!-- GoldQuill -->
+          <div class="col-lg-6">
+            <div class="portfolio-item p-4 shadow-sm rounded-4 text-center">
+              <img
+                src="./img/logo-goldquill.png"
+                class="portfolio-img-fluid rounded-4 my-3"
+                alt="GoldQuill Logo"
+              />
+              <h4 class="fw-bold portfolio-h5 mb-3">
+                GoldQuill - Content Submission Portal
+              </h4>
+              <p class="text-light">
+                A web-based platform developed for The Gold Panicles, allowing
+                seamless article, photo, and video submissions with automatic
+                categorization and user-friendly management features.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/17CTHA8g9vZsbOfnAp_pF73lXtEOmsWt8/view"
+                target="_blank"
+                class="btn portfolio-btn-primary rounded-pill px-4"
+              >
+                <i class="ri-drive-fill fs-5"></i> View on Google Drive
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="floating-arrow">
+          <a href="#home">
+            <i class="ri-arrow-up-s-line"></i>
+            <i class="ri-arrow-up-s-line"></i>
+            <i class="ri-arrow-up-s-line"></i>
+          </a>
         </div>
       </div>
     </section>
 
-    <footer class="footer bg-light py-3 text-center">
-      <p>2025 Yssah Barcial, All Rights Reserved.</p>
-      <a href="#home" class="btn btn-outline-secondary">
-        <i class="ri-arrow-up-s-fill"></i>
-      </a>
+    <footer class="footer py-3 text-center">
+      <p>&copy; 2025 Yssah Barcial, All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       AOS.init({ offset: 300, duration: 1400 });
+
+      /* Typed Text */
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed(".typed-text-output", {
+          strings: ["Web Designer", "Web Developer", "Front End Developer"],
+          typeSpeed: 60,
+          backSpeed: 30,
+          loop: true,
+        });
+      });
+
+      /* Certificates */
+      document.addEventListener("DOMContentLoaded", function () {
+        const certificates = document.querySelectorAll(".certificate-img");
+        const modalImg = document.getElementById("modalCertificateImg");
+        const modal = new bootstrap.Modal(
+          document.getElementById("certificateModal")
+        );
+
+        certificates.forEach((img) => {
+          img.addEventListener("click", () => {
+            modalImg.src = img.src;
+            modal.show();
+          });
+        });
+      });
     </script>
   </body>
 </html>
