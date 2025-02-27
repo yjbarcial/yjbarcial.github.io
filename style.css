@@ -23,14 +23,22 @@ header {
   margin: auto;
 }
 
-/* Navbar custom spacing */
+/* Navbar */
+.navbar-toggler {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+}
 
-/*
+.navbar-toggler-icon {
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .navbar-brand {
   font-size: 25px;
+  white-space: nowrap; /* Prevents text from breaking */
 }
-  */
-
 .navbar-nav .nav-link {
   margin-right: 1rem;
   color: #c3cad5;
@@ -58,8 +66,8 @@ header {
 }
 
 #home {
-  display: flex;
-  align-items: center;
+  display: column;
+  text-align: center;
   justify-content: flex-start;
   min-height: 100vh;
   padding: 0 5%;
@@ -80,10 +88,14 @@ header {
 }
 
 .main-content h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 900;
   margin: 20px 0 20px;
   line-height: 1.2;
+}
+
+.main-content h4 {
+  font-size: 1.8rem;
 }
 
 .main-content p {
@@ -158,7 +170,6 @@ a {
   width: 100%;
   height: auto;
 }
-
 .about {
   display: flex;
   align-items: center;
@@ -176,41 +187,29 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-
 .certificate-img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
-
 .certificate-title {
   text-align: center;
   padding-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .certificate-img {
-    max-width: 100%;
-  }
-}
-
 /* Portfolio image hover effect */
-
 .portfolio {
   position: relative;
 }
-
 .portfolio-item {
   background-color: rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #007bff;
 }
-
 .portfolio-img-fluid {
   max-height: 250px;
   object-fit: cover;
   border-radius: 1.5rem;
 }
-
 .portfolio-h5 {
   color: #0d6efd;
 }
@@ -226,19 +225,11 @@ a {
   border: 1px solid #dee2e6;
   padding: 0.75rem;
 }
-
 .contact-border {
   border: 2px solid #007bff;
 }
 
-/* Footer */
-.footer {
-  padding: 1.5rem 0;
-  background-color: #1b1f24;
-  color: #fff;
-  text-align: center;
-}
-
+/* Floating Arrow */
 .floating-arrow {
   position: absolute;
   right: 100px; /* Adjust as needed */
@@ -248,7 +239,6 @@ a {
   align-items: center;
   animation: floatArrows 1.5s infinite alternate ease-in-out;
 }
-
 .floating-arrow a {
   text-decoration: none;
   color: #13bbff;
@@ -258,14 +248,12 @@ a {
   align-items: center;
   transition: transform 0.3s ease;
 }
-
 .floating-arrow a:hover {
   transform: scale(1.2);
 }
-
 .floating-arrow i {
   display: block; /* Forces icons to stack */
-  line-height: .5; /* Removes extra spacing */
+  line-height: 0.5; /* Removes extra spacing */
 }
 
 /* Floating Animation */
@@ -278,7 +266,67 @@ a {
   }
 }
 
+/* Footer */
+.footer {
+  padding: 1.5rem 0;
+  background-color: #1b1f24;
+  color: #fff;
+  text-align: center;
+}
+
+/* @media */
+@media (max-width: 480px) {
+  #home {
+    margin-top: 100px;
+  }
+
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 40px 5%;
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: medium;
+  }
+
+  .floating-arrow {
+    right: 15px;
+    bottom: 60px;
+  }
+}
+
 @media (max-width: 768px) {
+  header {
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
   #home {
     background-size: cover;
     background-position: center;
@@ -290,5 +338,54 @@ a {
     width: 100%;
     text-align: left; /* Keeps left alignment on smaller screens */
     padding-left: 1rem; /* Adjusts padding for small screens */
+  }
+
+  .main-content h1 {
+    font-size: 3rem;
+  }
+
+  .main-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .certificate-img {
+    max-width: 100%;
+  }
+
+  .portfolio .row {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  .floating-arrow {
+    display: none; /* Hide floating arrows on mobile */
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 5%;
   }
 }
