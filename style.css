@@ -7,7 +7,7 @@
 
 body {
   color: #fff;
-  background-color: #1b263b;
+  background-color: #ffb384;
 }
 
 /* Header adjustments */
@@ -17,8 +17,7 @@ header {
   z-index: 1000;
   justify-content: space-between;
   padding: 40px 16%;
-  background: transparent;
-  background-color: #1b263b;
+  /* background: #c1977041; */
   transition: all 0.5s ease;
   margin: auto;
 }
@@ -29,24 +28,51 @@ header {
   padding: 5px;
   background-color: transparent;
 }
-
 .navbar-toggler-icon {
   border-radius: 5px;
   padding: 5px;
 }
-
 .navbar-brand {
-  font-size: 25px;
-  white-space: nowrap; /* Prevents text from breaking */
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  margin-left: -25px;
+}
+.navbar-brand span {
+  color: #ff7b00;
+}
+.navbar {
+  position: fixed; /* Sticks to the top */
+  width: 100%;
+  padding: 15px 0;
+  background: transparent; /* Initially transparent */
+  transition: background 0.3s ease, padding 0.3s ease; /* Smooth transition */
+}
+.navbar.scrolled {
+  background: rgba(255, 123, 0, 0.15); /* Light orange transparent background */
+  padding: 10px 0; /* Slightly reduce padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+}
+.nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .navbar-nav .nav-link {
-  margin-right: 1rem;
-  color: #c3cad5;
-  font-size: large;
+  color: #fff;
+  font-weight: 400; /* Normal weight */
+  transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
+}
+.navbar.scrolled .nav-link {
+  color: #fff !important; /* Forces text color to stay white */
 }
 .navbar-nav .nav-link:hover {
-  color: #13bbff;
-  text-shadow: 3px 3px 20px #13bbff, -2px 1px 30px #fff;
+  color: #ff7b00 !important;
+  transform: translateY(-3px);
+}
+.navbar-nav .nav-link.active {
+  font-weight: 700; /* Makes active link bold */
+  color: #ff7b00 !important; /* Highlights active link */
+  border-bottom: 2px solid #ff7b00; /* Optional: Adds an underline */
 }
 
 /* Hero section tweaks */
@@ -56,12 +82,12 @@ header {
   background-color: #f8f9fa;
 }
 .hero h1 span,
-.navbar-brand span {
-  color: #0d6efd;
+span {
+  color: #ff7b00;
 }
 
 .typed-text {
-  color: #0d6efd;
+  color: #ff7b00;
   height: 22px;
 }
 
@@ -70,10 +96,9 @@ header {
   text-align: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 0 5%;
-  background: url("img/1.JPG") no-repeat right center;
-  background-position: 80% center; /* Move image slightly to the left (adjust 80% as needed) */
-  background-size: auto 100%; /* Adjust height while keeping width proportional */
+  background: url("img/1.JPG");
+  background-position: right; /* Move image slightly to the left (adjust 80% as needed) */
+  background-size: 100%; /* Adjust height while keeping width proportional */
   position: relative;
 }
 
@@ -84,7 +109,7 @@ header {
   color: white;
   position: relative;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 100px;
 }
 
 .main-content h1 {
@@ -114,19 +139,18 @@ header {
   justify-content: center;
   width: 40px;
   height: 40px;
-  color: #13bbff;
+  color: #ff7b00;
   border-radius: 50%;
-  backdrop-filter: brightness(88%);
+  backdrop-filter: brightness(110%);
   font-size: 20px;
-  margin-right: 17px;
-  box-shadow: 0 0 20px transparent;
+  margin-right: 15px;
+  box-shadow: 0 0 50px transparent;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .social i:hover {
-  transform: scare(1.1);
-  box-shadow: 0 0 20px #13bbff;
+  transform: translateY(-10px);
 }
 
 a {
@@ -136,35 +160,36 @@ a {
 .btn {
   display: inline-block;
   padding: 11px 26px;
-  background: #13bbff;
-  color: #1b1f24;
-  border: 2px solid #13bbff;
+  background: #ff7b00;
+  color: #fff;
+  border: 2px solid #ca6302;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 600;
   transition: all 0.5s ease;
 }
-
 .btn:hover {
   background: transparent;
-  color: #13bbff;
-  box-shadow: 0 0 20px #13bbff;
+  color: #ca6302;
+  box-shadow: 0 0 20px #ca6302;
 }
-
 .btn2 {
   background: transparent;
-  color: #13bbff;
-  border: 2px solid #13bbff;
+  color: #ca6302;
+  border: 2px solid #ca6302;
   margin-left: 15px;
   transition: all 0.5s ease;
 }
-
 .btn2:hover {
-  background: #13bbff;
-  color: #1b1f24;
+  background: #ff7b00;
+  color: #fff;
 }
 
 /* About section image */
+.custom-border {
+  border-color: #ff7b00 !important;
+}
+
 .about-img img {
   border-radius: 1rem;
   width: 100%;
@@ -175,15 +200,17 @@ a {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  background-color: #1b263b;
   position: relative;
+}
+.custom-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); /* Adds a soft shadow */
 }
 
 /* CSS for Scrollable Certifications Section with Buttons */
 .certificate-img {
   width: 100%;
   object-fit: contain;
-  border: 2.5px solid #007bff;
+  border: 2.5px solid #ff7b00;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -194,6 +221,7 @@ a {
 .certificate-title {
   text-align: center;
   padding-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
 }
 
 /* Portfolio image hover effect */
@@ -203,7 +231,7 @@ a {
 .portfolio-item {
   background-color: rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid #007bff;
+  border: 2px solid #ff7b00;
 }
 .portfolio-img-fluid {
   max-height: 250px;
@@ -211,22 +239,11 @@ a {
   border-radius: 1.5rem;
 }
 .portfolio-h5 {
-  color: #0d6efd;
+  color: #ff7b00;
 }
 .portfolio-btn-primary {
   border-radius: 2rem;
   padding: 0.5rem 1.5rem;
-}
-
-/* Contact form */
-.contact-form input,
-.contact-form textarea {
-  border-radius: 0.5rem;
-  border: 1px solid #dee2e6;
-  padding: 0.75rem;
-}
-.contact-border {
-  border: 2px solid #007bff;
 }
 
 /* Floating Arrow */
@@ -241,7 +258,7 @@ a {
 }
 .floating-arrow a {
   text-decoration: none;
-  color: #13bbff;
+  color: #ca6302;
   font-size: 40px; /* Make arrows bigger */
   display: flex;
   flex-direction: column; /* Ensures the icons stack */
@@ -269,8 +286,8 @@ a {
 /* Footer */
 .footer {
   padding: 1.5rem 0;
-  background-color: #1b1f24;
-  color: #fff;
+  background: rgba(255, 123, 0, 0.15); /* Light orange transparent background */
+  color: #1b1f24;
   text-align: center;
 }
 
@@ -297,7 +314,7 @@ a {
   }
 
   .navbar-brand {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 15px;
   }
 
