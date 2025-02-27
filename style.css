@@ -172,7 +172,7 @@ a {
 .certificate-img {
   width: 100%;
   object-fit: contain;
-  border: 3px solid #007bff;
+  border: 2.5px solid #007bff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -182,6 +182,11 @@ a {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
+.certificate-title {
+  text-align: center;
+  padding-top: 10px;
+}
+
 @media (max-width: 768px) {
   .certificate-img {
     max-width: 100%;
@@ -189,6 +194,10 @@ a {
 }
 
 /* Portfolio image hover effect */
+
+.portfolio {
+  position: relative;
+}
 
 .portfolio-item {
   background-color: rgba(255, 255, 255, 0.05);
@@ -225,21 +234,48 @@ a {
 /* Footer */
 .footer {
   padding: 1.5rem 0;
-  background-color: #343a40;
+  background-color: #1b1f24;
   color: #fff;
   text-align: center;
 }
-.scroll-top {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  background-color: #0d6efd;
-  color: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 50%;
+
+.floating-arrow {
+  position: absolute;
+  right: 100px; /* Adjust as needed */
+  bottom: 100px; /* Adjust to align properly */
+  display: flex;
+  flex-direction: column; /* Stack arrows */
+  align-items: center;
+  animation: floatArrows 1.5s infinite alternate ease-in-out;
 }
-.scroll-top:hover {
-  background-color: #0b5ed7;
+
+.floating-arrow a {
+  text-decoration: none;
+  color: #13bbff;
+  font-size: 40px; /* Make arrows bigger */
+  display: flex;
+  flex-direction: column; /* Ensures the icons stack */
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.floating-arrow a:hover {
+  transform: scale(1.2);
+}
+
+.floating-arrow i {
+  display: block; /* Forces icons to stack */
+  line-height: .5; /* Removes extra spacing */
+}
+
+/* Floating Animation */
+@keyframes floatArrows {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 @media (max-width: 768px) {
