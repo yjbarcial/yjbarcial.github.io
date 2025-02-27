@@ -36,7 +36,6 @@ header {
   font-size: 40px;
   margin: 0;
   padding: 0;
-  margin-left: -25px;
 }
 .navbar-brand span {
   color: #ff7b00;
@@ -92,13 +91,14 @@ span {
 }
 
 #home {
-  display: column;
-  text-align: center;
+  display: column; /* Changed for better alignment */
+  align-items: center; /* Centers content vertically */
   justify-content: flex-start;
+  text-align: center;
   min-height: 100vh;
-  background: url("img/1.JPG");
-  background-position: right; /* Move image slightly to the left (adjust 80% as needed) */
-  background-size: 100%; /* Adjust height while keeping width proportional */
+  background: url("img/1.JPG") no-repeat center;
+  background-size: cover;
+  background-position: center 25%; /* Moves image down slightly */
   position: relative;
 }
 
