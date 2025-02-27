@@ -71,7 +71,7 @@ header {
   justify-content: flex-start;
   min-height: 100vh;
   padding: 0 5%;
-  background: url("img/grad-pic1.png") no-repeat right center;
+  background: url("img/1.jpg") no-repeat right center;
   background-position: 80% center; /* Move image slightly to the left (adjust 80% as needed) */
   background-size: auto 100%; /* Adjust height while keeping width proportional */
   position: relative;
