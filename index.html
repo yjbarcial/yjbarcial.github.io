@@ -19,18 +19,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
   </head>
 
   <body>
-    <header
-      class="navbar navbar-expand-lg fixed-top d-flex align-items-center py-3"
-    >
+    <header class="navbar navbar-expand-lg fixed-top d-flex py-3">
       <div class="container">
-        <p class="navbar-brand text-white fw-bold">
-          LL<span>X.</span>
-        </p>
+        <p class="custom-shadow navbar-brand text-white fw-bold">LL<span>X.</span></p>
         <button
-          class="navbar-toggler bg-primary"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -39,7 +39,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -54,7 +56,7 @@
       </div>
     </header>
 
-    <section class="hero d-flex align-items-center min-vh-100 ms-4" id="home">
+    <section class="hero d-flex align-items-center min-vh-100" id="home">
       <div class="main-content ms-5" data-aos="fade-in">
         <h4 class="fw-bold pb-2">Welcome!</h4>
         <h1 class="fw-bold">I'm <span>Yssah Barcial</span></h1>
@@ -98,11 +100,11 @@
     </section>
 
     <!-- About Section -->
-    <div class="about d-flex" id="about" data-aos="fade-up">
+    <section class="about d-flex" id="about" data-aos="fade-up">
       <div class="container text-white pt-5">
         <!-- Section Heading -->
         <div class="text-center mx-5 my-5" data-aos="fade-in">
-          <h2 class="fw-bold"><span class="text-primary">About</span> Me</h2>
+          <h2 class="fw-bold"><span>About</span> Me</h2>
         </div>
         <!-- End of Section Heading -->
 
@@ -113,7 +115,7 @@
             data-aos="zoom-in-down"
           >
             <div
-              class="border border-primary border-3 rounded-circle p-2 shadow-lg"
+              class="custom-border rounded-circle p-2 shadow-lg"
               style="width: 400px; height: 400px; overflow: hidden"
             >
               <img
@@ -128,21 +130,21 @@
           <!-- Bio Section -->
           <div class="col-lg-8 ps-5" data-aos="zoom-in-up">
             <h2 class="fw-semibold mb-3 text-white fs-3">
-              Hi, I'm <span class="text-primary">Yssah</span> — I build clean,
-              responsive, and user-friendly web applications.
+              Hi, I'm <span>Yssah</span> — I build clean, responsive, and
+              user-friendly web applications.
             </h2>
-            <p class="fs-6 text-light fst-italic mb-4">
+            <p class="custom-shadow fs-6 text-light fst-italic mb-4">
               Coding with purpose, designing with passion.
             </p>
             <div class="row g-3">
               <div class="col-md-6">
                 <ul class="list-unstyled fs-6 text-light">
                   <li>
-                    <i class="bi bi-code-slash text-primary"></i>
+                    <i class="bi bi-code-slash"></i>
                     <strong>Experience:</strong> 2 Years
                   </li>
                   <li>
-                    <i class="bi bi-pencil-square text-primary"></i>
+                    <i class="bi bi-pencil-square"></i>
                     <strong>Specialty:</strong> Web Design & Development
                   </li>
                 </ul>
@@ -150,18 +152,11 @@
               <div class="col-md-6">
                 <ul class="list-unstyled fs-6 text-light">
                   <li>
-                    <i class="bi bi-address text-primary"></i>
                     <strong>Address:</strong> Quarry, Brgy. Poblacion 9,
                     Cabadbaran City
                   </li>
-                  <li>
-                    <i class="bi bi-phone text-primary"></i>
-                    <strong>Phone:</strong> 0956 – 382 – 9900
-                  </li>
-                  <li>
-                    <i class="bi bi-envelope text-primary"></i>
-                    <strong>Email:</strong> yjbarcial@gmail.com
-                  </li>
+                  <li><strong>Phone:</strong> 0956 – 382 – 9900</li>
+                  <li><strong>Email:</strong> yjbarcial@gmail.com</li>
                 </ul>
               </div>
             </div>
@@ -175,7 +170,7 @@
         <div class="row g-5 mt-5">
           <div class="col-lg-3" data-aos="fade-up">
             <h3
-              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+              class="custom-shadow custom-border fw-bold text-white fs-4 mb-4 border-start border-4 ps-3"
             >
               Educational Background
             </h3>
@@ -187,7 +182,7 @@
           </div>
           <div class="col-lg-3" data-aos="fade-up">
             <h3
-              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+              class="custom-shadow custom-border fw-bold text-white fs-4 mb-4 border-start border-4 ps-3"
             >
               Academic Achievements
             </h3>
@@ -202,7 +197,7 @@
           </div>
           <div class="col-lg-3" data-aos="fade-up">
             <h3
-              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+              class="custom-shadow custom-border fw-bold text-white fs-4 mb-4 border-start border-4 ps-3"
             >
               Organization Affiliations
             </h3>
@@ -214,10 +209,11 @@
           </div>
           <div class="col-lg-3" data-aos="fade-up">
             <h3
-              class="fw-bold text-white fs-4 mb-3 border-start border-4 border-primary ps-3"
+              class="custom-shadow custom-border fw-bold text-white fs-4 mb-4 border-start border-4 ps-3"
             >
               Training & Seminars Attended
             </h3>
+
             <p class="fs-6 text-light">
               <strong>Generation Connect Philippines</strong><br />
               <em
@@ -237,21 +233,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Certificates Section -->
-    <div class="certificates py-5" id="certificates" data-aos="fade-up">
+    <section class="certificates py-5" id="certificates" data-aos="fade-up">
       <div class="container text-white">
         <!-- Section Heading -->
         <div class="text-center mx-5 my-5" data-aos="fade-in">
-          <h2 class="fw-bold">
-            My <span class="text-primary">Certificates</span>
-          </h2>
+          <h2 class="fw-bold">My <span>Certificates</span></h2>
         </div>
         <!-- End of Section Heading -->
         <div class="row g-4 justify-content-center">
           <div
-            class="col-md-6 col-lg-4 pb-2"
+            class="col-md-6 col-lg-4"
             v-for="certificate in certificates"
           >
             <img
@@ -309,7 +303,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Modal for Fullscreen View -->
     <div
@@ -342,9 +336,7 @@
       <div class="container">
         <!-- Section Heading -->
         <div class="text-center my-5" data-aos="fade-down">
-          <h2 class="fw-bold">
-            My <span class="text-primary">Portfolio</span>
-          </h2>
+          <h2 class="fw-bold">My <span>Portfolio</span></h2>
         </div>
 
         <!-- Portfolio Projects -->
@@ -401,7 +393,7 @@
             </div>
           </div>
         </div>
-        <div class="floating-arrow">
+        <div class="floating-arrow mb-3">
           <a href="#home">
             <i class="ri-arrow-up-s-line"></i>
             <i class="ri-arrow-up-s-line"></i>
@@ -412,15 +404,52 @@
     </section>
 
     <footer class="footer py-3 text-center">
-      <p>&copy; 2025 Yssah Barcial, All Rights Reserved.</p>
+      <p>&copy; 2025 Yssah Barcial,&nbsp;All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <script>
       AOS.init({ offset: 300, duration: 1400 });
+
+      /* Navbar Effects */
+      window.addEventListener("scroll", function () {
+        let navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let sections = document.querySelectorAll("section");
+        let navLinks = document.querySelectorAll(".nav-link");
+
+        function changeActiveSection() {
+          let scrollY = window.scrollY;
+
+          sections.forEach((section) => {
+            let sectionTop = section.offsetTop - 100; // Offset to adjust activation point
+            let sectionHeight = section.offsetHeight;
+            let sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+              navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${sectionId}`) {
+                  link.classList.add("active");
+                }
+              });
+            }
+          });
+        }
+
+        window.addEventListener("scroll", changeActiveSection);
+      });
 
       /* Typed Text */
       document.addEventListener("DOMContentLoaded", function () {
